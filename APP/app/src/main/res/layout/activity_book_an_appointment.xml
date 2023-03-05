@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/nil"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:textStyle="bold"
+            android:text="Name"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/ll1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Address"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/ll2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Additional Info (e.g Symptoms)"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/addiinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll3"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:hint="Enter Date"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/enterdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Enter date"
+            android:background="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll3"
+android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="71dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:text="Confirm Booking"
+        android:textColor="#ffffff" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/appCompatTextViewLoginLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@id/confirmbook"
+        android:text="Already a member? Login"
+
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+
+
+</RelativeLayout>

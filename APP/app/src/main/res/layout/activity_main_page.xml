@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the Disease"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textSize="22dp"
+
+            android:textColor="#ffffff"
+
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/toolbar"
+       android:layout_marginTop="10dp"
+android:layout_margin="4dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Diabetes"
+android:textColor="#ffffff"
+            android:background="@drawable/drop_shadow"
+           />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Cancer "
+            android:textColor="#ffffff"
+            android:background="@drawable/drop_shadow" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:text="Heart Disease"
+            android:textColor="#ffffff"
+            android:background="@drawable/drop_shadow"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/drop_shadow"
+            android:text="Infectious Disease" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="Skin Disease"
+            android:background="@drawable/drop_shadow" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="Teeth Disease "
+            android:background="@drawable/drop_shadow"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
